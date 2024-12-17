@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="static/css/signin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="static/images/hifilogo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="main-section">
+        <div class="container">
+            <div class="left-section">
+                <p>Welcome to Hifi Delivery Eats</p>
+                <h1>Sign In</h1>
+                <form>
+                    <label for="phone-email">E-mail</label>
+                    <input type="text" id="phone-email" placeholder="abc@gmail.com" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <button class="btn">Next</button>
+                </form>
+                <div class="link">
+                    <p id="para">Don't have an account?  <a href="signup.html" class="link">Sign Up</a>
+                    <a href="forgot.html">Forgot Password?</a></p>
+                </div>
+                <div class="social-icons">
+                    <p>or continue with</p>
+                    <div class="icons">
+                        <img src="static/images/facebook.png" alt="Facebook">
+                        <img src="static/images/twitter.png" alt="Twitter">
+                        <img src="static/images/google.jpg" alt="Google">
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="static/images/pancakes.jpg" alt="Pancakes">
+            </div>
+        </div>
+    </div>
+    <script src="static/js/signinjs.js"></script>
+</body>
+</html>

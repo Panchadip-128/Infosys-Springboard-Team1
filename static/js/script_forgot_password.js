@@ -1,10 +1,8 @@
 // Placeholder script for form submission
 document.querySelector('form').addEventListener('submit', function (e) {
-    e.preventDefault();
     const contactInput = document.getElementById('contact').value;
-    if (isValidContact(contactInput)) {
-        alert('Next Step: Verification!');
-    } else {
+    if (!isValidContact(contactInput)) {
+        e.preventDefault();
         alert('Please enter a valid Phone Number or Email.');
     }
 });

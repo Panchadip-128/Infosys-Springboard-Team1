@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #F17272, #F5E476);
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFD3D3;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Start the image in the middle */
+    left: 0;
+    width: 100%;
+    height: 80%; /* Covers only the middle 50% of the screen */
+    background-image: url('/static/images/hifilogo.png');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e05550;
+}
+
+.phone-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.phone-images img {
+    width: 150px;
+    margin: 0 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-playstore {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.btn-appstore {
+    background-color: #ffffff;
+    color: #ff6f61;
+    border: 2px solid #ff6f61;
+}
